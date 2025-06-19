@@ -1,0 +1,371 @@
+# ================================================================================================
+# MASK R-CNN BIRD DETECTION PROJECT - GITIGNORE
+# ================================================================================================
+# This gitignore file excludes files that shouldn't be committed to version control
+# for a PyTorch/machine learning project with large datasets and models
+
+# ================================================================================================
+# PYTHON
+# ================================================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+maskrcnn_venv/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ================================================================================================
+# MACHINE LEARNING & DATA SCIENCE
+# ================================================================================================
+
+# Trained models and checkpoints
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.safetensors
+
+# Model checkpoints directory (but keep the folder structure)
+model_checkpoints/
+checkpoints/
+saved_models/
+weights/
+models/
+
+# Exception: Keep small example models or final models if needed
+# !final_model.pth
+# !example_model.pth
+
+# TensorBoard logs
+runs/
+logs/
+tensorboard/
+tb_logs/
+lightning_logs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+mlflow/
+
+# Experiment tracking
+experiments/
+results/
+outputs/
+
+# Data files
+*.npy
+*.npz
+*.mat
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+
+# ================================================================================================
+# DATASETS
+# ================================================================================================
+
+# Large dataset directories
+CUB_200_2011/
+datasets/
+data/
+raw_data/
+processed_data/
+segmentations/
+
+# Image directories
+images/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.tif
+*.gif
+*.webp
+*.svg
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# Annotation files (large)
+annotations/
+labels/
+masks/
+
+# Temporary data processing files
+temp/
+tmp/
+cache/
+.cache/
+
+# ================================================================================================
+# DEVELOPMENT ENVIRONMENT
+# ================================================================================================
+
+# Virtual environments
+maskrcnn_venv/
+.conda/
+conda-meta/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# JupyterLab
+.jupyter/
+
+# ================================================================================================
+# SYSTEM FILES
+# ================================================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================================================================================
+# PROJECT SPECIFIC
+# ================================================================================================
+
+# Test outputs
+test_outputs/
+inference_results/
+predictions/
+visualization/
+
+# Configuration files with sensitive data
+config/secrets.yaml
+.env.local
+.env.production
+api_keys.txt
+credentials.json
+
+# Large log files
+*.log
+logs/
+debug.log
+error.log
+
+# Backup files
+*.bak
+*.backup
+*~
+.orig
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Documentation build
+docs/build/
+docs/_build/
+
+# ================================================================================================
+# OPTIONAL: UNCOMMENT WHAT YOU NEED
+# ================================================================================================
+
+# If you want to track small datasets or examples
+# !small_dataset/
+# !examples/
+
+# If you want to track configuration files
+# !config/
+# !configs/
+
+# If you want to track some model files
+# !final_trained_model.pth
+# !best_model.pth
+
+# If you want to track notebooks output
+# !*.ipynb
+
+# If you want to track specific result files
+# !results/summary.txt
+# !results/metrics.json
