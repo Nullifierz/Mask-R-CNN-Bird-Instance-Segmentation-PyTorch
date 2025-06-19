@@ -50,8 +50,8 @@ pip install -r requirements.txt
 
 ### 3. Dataset Setup
 
-1. Download CUB-200-2011 dataset from [Caltech-UCSD Birds-200-2011](https://www.vision.caltech.edu/datasets/cub_200_2011/)
-2. Extract to `CUB_200_2011/` folder
+1. Download CUB-200-2011 dataset and segmentations from [Caltech-UCSD Birds-200-2011](https://www.vision.caltech.edu/datasets/cub_200_2011/)
+2. Extract to `CUB_200_2011/` and `segmentations/segmentations` folder
 3. Ensure folder structure matches the description above
 
 ## 🚀 Usage
