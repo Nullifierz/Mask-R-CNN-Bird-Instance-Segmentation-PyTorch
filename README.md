@@ -66,7 +66,8 @@ Open `Mask RCNN.ipynb` in Jupyter Notebook and run cells sequentially:
 # 3. Prepare dataset and dataloader
 # 4. Training loop
 # 5. Save checkpoint and final model
-# 6. SINGLE IMAGE PREDICTION AND TESTING
+# 6. Model evaluation and visualization
+# 7. Prediction and Testing
 ```
 
 #### Training Parameters:
